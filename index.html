@@ -145,16 +145,40 @@
                 </div>
                 <div class="realizations__splide-container splide" role="group">
                     <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="https://picsum.photos/200/300" alt=""></li>
-                            <li class="splide__slide"><img src="https://picsum.photos/500/300" alt=""></li>
-                            <li class="splide__slide"><img src="https://picsum.photos/300/300" alt=""></li>
-                            <li class="splide__slide"><img src="https://picsum.photos/100/300" alt=""></li>
-                            <li class="splide__slide"><img src="https://picsum.photos/200/300" alt=""></li>
-                            <li class="splide__slide"><img src="https://picsum.photos/500/300" alt=""></li>
-                            <li class="splide__slide"><img src="https://picsum.photos/300/300" alt=""></li>
-                            <li class="splide__slide"><img src="https://picsum.photos/100/300" alt=""></li>
-                        </ul>
+                        <div class="splide__list pswp-gallery" id="gallery">
+                            <a href="https://picsum.photos/200/500" target="_blank" data-pswp-width="1669"
+                                data-pswp-height="2500" class="splide__slide">
+                                <img src="https://picsum.photos/200/300" alt="">
+                            </a>
+                            <a href="https://picsum.photos/200/200" target="_blank" data-pswp-width="1669"
+                                data-pswp-height="2500" class="splide__slide">
+                                <img src="https://picsum.photos/500/300" alt="">
+                            </a>
+                            <a href="https://picsum.photos/200/300" target="_blank" data-pswp-width="1669"
+                                data-pswp-height="2500" class="splide__slide">
+                                <img src="https://picsum.photos/300/300" alt="">
+                            </a>
+                            <a href="https://picsum.photos/200/100" target="_blank" data-pswp-width="1669"
+                                data-pswp-height="2500" class="splide__slide">
+                                <img src="https://picsum.photos/150/300" alt="">
+                            </a>
+                            <a href="https://picsum.photos/200/600" target="_blank" data-pswp-width="1669"
+                                data-pswp-height="2500" class="splide__slide">
+                                <img src="https://picsum.photos/200/300" alt="">
+                            </a>
+                            <a href="https://picsum.photos/200/350" target="_blank" data-pswp-width="1669"
+                                data-pswp-height="2500" class="splide__slide">
+                                <img src="https://picsum.photos/500/300" alt="">
+                            </a>
+                            <a href="https://picsum.photos/200/150" target="_blank" data-pswp-width="1669"
+                                data-pswp-height="2500" class="splide__slide">
+                                <img src="https://picsum.photos/300/300" alt="">
+                            </a>
+                            <a href="https://picsum.photos/200/360" target="_blank" data-pswp-width="1669"
+                                data-pswp-height="2500" class="splide__slide">
+                                <img src="https://picsum.photos/150/300" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -199,16 +223,27 @@
     <h1>FOOTER</h1>
     <script src="./dist/js/nav.min.js"></script>
 <script src="./dist/js/bgIcons.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
+<!-- Splide JS -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script
     src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 <script src="./dist/js/splideConfig.min.js"></script>
 
-<!-- <script src="./dist/js/photoSwipeConfig.min.js"></script> -->
-
+<!-- PhotoSwipe JS -->
 <script src="./src/js/photoswipe.esm.js"></script>
 <script src="./src/js/photoswipe-lightbox.esm.js"></script>
+
+<script type="module">
+    import PhotoSwipeLightbox from './dist/js/photoswipe-lightbox.esm.js';
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#gallery',
+        children: '.splide__slide',
+        pswpModule: () => import('./dist/js/photoswipe.esm.js'),
+        counter: false
+    });
+    lightbox.init();
+</script>
 </body>
 
 </html>
