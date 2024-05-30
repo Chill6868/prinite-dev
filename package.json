@@ -1,0 +1,31 @@
+{
+	"name": "part4",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Chill",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@babel/core": "^7.24.6",
+		"@babel/preset-env": "^7.24.6",
+		"autoprefixer": "^10.4.19",
+		"browser-sync": "^3.0.2",
+		"cssnano": "^7.0.1",
+		"gulp": "^4.0.2",
+		"gulp-babel": "^8.0.0",
+		"gulp-clean": "^0.4.0",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-kit": "^0.3.0",
+		"gulp-postcss": "^10.0.0",
+		"gulp-rename": "^2.0.0",
+		"gulp-sass": "^5.1.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-uglify": "^3.0.2",
+		"postcss": "^8.4.38",
+		"sass": "^1.77.2"
+	}
+}
