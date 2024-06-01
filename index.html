@@ -121,13 +121,13 @@
             <div class="services__container">
                 <div class="text-box text-box__tac">
                     <p class="text__md text__gradient-2">Nasze usługi</p>
-                    <h2 class="text__xl">Lorem, ipsum dolor.</h2>
+                    <h2 class="text__xl">Lorem, ipsum <span class="doddle doddle__underline1">dolor</span>.</h2>
                 </div>
                 <div class="services__box-container">
                     <div class="services__box">
                         <img src="./dist/img/services1.min.png"
                             alt="Pracownik nanosi żółtą farbę na czarne koszulki, korzystając z techniki sitodruku."
-                            class="services__box-img services__box-img--border1">
+                            class="services__box-img services__box-img--shape1">
                         <div class="services__box-text">
                             <p class="text__sm services__box-subtitle text__gradient-2">Trwałość i Jakość w Każdym
                                 Detalu</p>
@@ -142,7 +142,7 @@
                     <div class="services__box">
                         <img src="./dist/img/services1.min.png"
                             alt="Pracownik nanosi żółtą farbę na czarne koszulki, korzystając z techniki sitodruku."
-                            class="services__box-img services__box-img--border2">
+                            class="services__box-img services__box-img--shape2">
                         <div class="services__box-text services__box-text--secondary">
                             <p class="text__sm services__box-subtitle text__gradient-2">Profesjonalne Nadruki na Różnych
                                 Materiałach</p>
@@ -157,7 +157,7 @@
                     <div class="services__box">
                         <img src="./dist/img/services1.min.png"
                             alt="Pracownik nanosi żółtą farbę na czarne koszulki, korzystając z techniki sitodruku."
-                            class="services__box-img services__box-img--border3">
+                            class="services__box-img services__box-img--shape3">
                         <div class="services__box-text">
                             <p class="text__sm services__box-subtitle text__gradient-2">Od Prostej Grafiki po Złożone
                                 Wzory</p>
@@ -175,12 +175,12 @@
         </div>
     </section>
 
-    <section class="realizations">
+    <section class="realizations" id="realizations">
         <div class="wrapper">
             <div class="realizations__container">
                 <div class="text-box text-box__tac">
                     <p class="text__md text__gradient-2">Realizacje</p>
-                    <h2 class="text__xl">Nasze wyróżnione projekty</h2>
+                    <h2 class="text__xl">Nasze wyróżnione <span class="doddle doddle__circle1">projekty</span></h2>
                 </div>
                 <div class="realizations__splide-container splide" role="group">
                     <div class="splide__track">
@@ -231,8 +231,6 @@
                     <p class="text__md text__gradient-1">Skontakuj się z nami</p>
                     <h2 class="text__lg contact-us__title">Lorem ipsum dolor sit amet.</h2>
                     <div class="contact-us__box-grid">
-                        <?xml version="1.0" encoding="utf-8"?>
-                        <?xml version="1.0" encoding="utf-8"?>
                         <svg viewBox="9.608 34.254 82.121 26.656" xmlns="http://www.w3.org/2000/svg"
                             class="contact-us__arrow">
                             <defs>
@@ -251,22 +249,40 @@
                         </svg>
                         <div class="contact-us__contact-box">
                             <div class="contact-us__contact-box-item-container">
-                                <p class="contact-us__contact-box-item"><i class="ti ti-map"></i> ul. Wyszyńskiego 35a
-                                </p>
-                                <p class="contact-us__contact-box-item"><i class="ti ti-building-skyscraper"></i>
-                                    Wieluń,
-                                    98-300
-                                </p>
+                                <a href="https://www.google.com/maps/place/Osiedle+Kard.+St.+Wyszy%C5%84skiego+32-36,+98-300+Wielu%C5%84/@51.2176289,18.5806441,17z/data=!4m6!3m5!1s0x471a7f5ed22ef94d:0x787e28672edf5f27!8m2!3d51.2174779!4d18.581023!16s%2Fg%2F11c6378m3g"
+                                    target="_blank" class="contact-us__contact-box-link">
+                                    <span class="contact-us__contact-box-item"><i class="ti ti-map"></i> os.
+                                        Wyszyńskiego
+                                        35a
+                                    </span>
+                                    <span class="contact-us__contact-box-item"><i class="ti ti-building-skyscraper"></i>
+                                        Wieluń,
+                                        98-300
+                                    </span>
+                                </a>
                             </div>
                             <div class="contact-us__contact-box-item-container">
-                                <p class="contact-us__contact-box-item"><i class="ti ti-mail"></i> example@gmail.com</p>
-                                <p class="contact-us__contact-box-item"><i class="ti ti-phone"></i> +48 123 456 789</p>
+                                <a href="mailto:example@gmail.com" target="_blank" class="contact-us__contact-box-link">
+                                    <span class="contact-us__contact-box-item"><i class="ti ti-mail"></i>
+                                        example@gmail.com
+                                    </span>
+                                </a>
+                                <a href="tel:+48123456789" target="_blank" class="contact-us__contact-box-link">
+                                    <span class="contact-us__contact-box-item"><i class="ti ti-phone"></i> +48 123 456
+                                        789</span>
+                                </a>
                             </div>
                             <div class="contact-us__contact-box-item-container">
-                                <p class="contact-us__contact-box-item"><i class="ti ti-brand-instagram"></i> Instagram
-                                </p>
-                                <p class="contact-us__contact-box-item"><i class="ti ti-brand-facebook"></i> Facebook
-                                </p>
+                                <a href="https://instagram.com" target="_blank" class="contact-us__contact-box-link">
+                                    <span class="contact-us__contact-box-item"><i class="ti ti-brand-instagram"></i>
+                                        Instagram
+                                    </span>
+                                </a>
+                                <a href="https://instagram.com" target="_blank" class="contact-us__contact-box-link">
+                                    <span class="contact-us__contact-box-item"><i class="ti ti-brand-facebook"></i>
+                                        Facebook
+                                    </span>
+                                </a>
                             </div>
                         </div>
                         <div class="contact-us__btn-box">
@@ -328,6 +344,7 @@
     <script src="./dist/js/nav.min.js"></script>
 <script src="./dist/js/bgIcons.min.js"></script>
 <script src="./dist/js/headerVideoBackground.min.js"></script>
+<script src="./dist/js/safariTest.min.js"></script>
 
 <!-- Splide JS -->
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
