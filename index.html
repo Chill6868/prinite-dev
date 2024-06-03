@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@800&display=swap" rel="stylesheet">
 <!-- Tabler CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 <!-- Splide CSS -->
@@ -105,35 +106,63 @@
             <video playsinline autoplay muted class="header__video"></video>
             <div class="header__bg-video--shadow"></div>
         </div>
-        <div class="header__text-container">
-            <h1 class="header__title text__xl text__gradient-3">Drukujemy to, co chcesz!</h1>
-            <p class="header__subtitle text__md">Lorem, ipsum dolor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit,
-                amet consectetur
-                adipisicing elit. Praesentium, fugit!</p>
+        <div class="header__container">
+            <div class="header__text">
+                <h1 class="header__title text__lg"><span class="header__title--line">Drukujemy to,</span>
+                    <span class="header__title--line text__xxl text__gradient-3">co chcesz!</span>
+                </h1>
+                <p class="header__subtitle text__md">Lorem, ipsum dolor. Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                    sit,
+                    amet consectetur
+                    adipisicing elit. Praesentium, fugit!</p>
+            </div>
+            <div class="header__btn-container">
+                <button class="btn">
+                    <div class="btn__solid-gradient"></div>
+                    <span class="btn__text">Kontakt</span>
+                </button>
+                <button class="btn">
+                    <div class="btn__border-gradient"></div>
+                    <span class="btn__text">Współpraca</span>
+                </button>
+            </div>
         </div>
         <a href="#services" class="header__arrow-btn">
             <i class="ti ti-chevron-down"></i>
         </a>
     </header>
 
-    <section class="services" id="services">
+    <section class="services margin" id="services">
         <div class="wrapper">
             <div class="services__container">
                 <div class="text-box text-box__tac">
                     <p class="text__md text__gradient-2">Nasze usługi</p>
-                    <h2 class="text__xl">Lorem, ipsum <span class="doddle doddle__underline1">dolor</span>.</h2>
+                    <h2 class="text__xl">Lorem, ipsum <span class="doddle doddle__underline1">dolor<svg
+                                viewBox="0 -0.005 1417.245 124.208">
+                                <defs>
+                                    <linearGradient xlink:href="#a" id="b" x1="708.622" x2="708.622" y1="-.005"
+                                        y2="124.203" gradientUnits="userSpaceOnUse" />
+                                    <linearGradient bx:pinned="true" id="a">
+                                        <stop offset="0" stop-color="#8acef8" />
+                                        <stop offset=".12" stop-color="#a3dcff" />
+                                        <stop offset="1" stop-color="#0d466d" />
+                                    </linearGradient>
+                                </defs>
+                                <path
+                                    d="M1412.29 72.17c-11.04-5.78-20.07-14.33-85.46-25.24-22.37-3.63-44.69-7.56-67.07-11.04-167.11-22.06-181.65-21.24-304.94-30.56C888.78 1.39 822.57 1.1 756.44 0c-46.63-.11-93.27 1.56-139.89 2.5C365.5 13.55 452.86 7.68 277.94 23.15 202.57 33.32 127.38 45.01 52.07 55.69c-11.23 2.41-22.63 4.17-33.71 7.22C6.1 66.33 5.64 66.19 3.89 67.79c-7.99 5.78-2.98 20.14 8.72 17.5 33.99-9.47 32.28-8.57 178.06-29.66 4.26 4.48 7.29 3.38 18.42 3.11 13.19-.32 26.38-.53 39.56-1.12 53.51-3.81 106.88-9.62 160.36-13.95 18.41-1.3 36.8-3.12 55.21-4.7 23.21-1.16 46.43-2.29 69.65-3.4 120.28-2.16 85.46-3.13 234.65-1.52 23.42.99 1.57-.18 125.72 6.9 96.61 8.88 200.92 27.94 295.42 46.12 40.87 7.91 116.67 23.2 156.31 36.78 3.81 1.05 8.28-.27 10.51-3.58 3.17-3.72 2.66-9.7-.78-13.13-3.25-3.12-8.14-3.44-12.18-5.08-17.89-5.85-44.19-12.09-63.67-16.56l26.16 3.28c23.02 3.13 46.28 3.92 69.34 6.75 10.8.96 25.43 1.81 34.34-4.39 2.26-1.54 4.86-2.75 6.21-5.27 2.76-4.59 1.13-11.06-3.59-13.68zM925.4 23.77c37.64 1.4 153.99 10.85 196.64 14.94 45.95 5.51 91.89 11.03 137.76 17.19 24.25 4.77 74.13 11.21 101.72 18.14-11.87-1.15-23.77-1.97-35.65-3.06-133.46-15.9-266.8-33.02-400.47-47.21"
+                                    fill="url(#b)" />
+                            </svg></span></h2>
                 </div>
                 <div class="services__box-container">
                     <div class="services__box">
-                        <div class=" services__box-img services__box-img--shape1">
+                        <div class="services__box-img services__box-img--1">
                             <img src="./dist/img/services1.min.png"
                                 alt="Pracownik nanosi żółtą farbę na czarne koszulki, korzystając z techniki sitodruku.">
                         </div>
                         <div class="services__box-text">
-                            <p class="text__sm services__box-subtitle text__gradient-2">Trwałość i Jakość w Każdym
-                                Detalu</p>
-                            <h3 class="text__lg services__box-title">Sitodruk</h3>
-                            <p class="text__md services__box-p">Oferujemy profesjonalne usługi sitodruku, od prostych,
+                            <p class="text__sm text__gradient-2">Trwałość i Jakość</p>
+                            <h3 class="text__lg">Sitodruk</h3>
+                            <p class="text__md">Oferujemy profesjonalne usługi sitodruku, od prostych,
                                 jednokolorowych nadruków po pełnokolorowe, złożone grafiki. Dzięki nowoczesnej
                                 technologii i wysokiej jakości farbom zapewniamy trwałe i wyraziste nadruki na różnych
                                 materiałach. Idealne rozwiązanie dla Twojej marki, eventów, czy kampanii reklamowych.
@@ -141,15 +170,14 @@
                         </div>
                     </div>
                     <div class="services__box">
-                        <div class=" services__box-img services__box-img--shape2">
+                        <div class="services__box-img services__box-img--2">
                             <img src="./dist/img/services1.min.png"
                                 alt="Pracownik nanosi żółtą farbę na czarne koszulki, korzystając z techniki sitodruku.">
                         </div>
                         <div class="services__box-text services__box-text--secondary">
-                            <p class="text__sm services__box-subtitle text__gradient-2">Profesjonalne Nadruki na Różnych
-                                Materiałach</p>
-                            <h3 class="text__lg services__box-title">Folia Flex (HTV)</h3>
-                            <p class="text__md services__box-p">Nasza usługa folii Flex (HTV) oferuje trwałe i wyraziste
+                            <p class="text__sm text__gradient-2">Profesjonalne Nadruki</p>
+                            <h3 class="text__lg">Folia Flex</h3>
+                            <p class="text__md">Nasza usługa folii Flex (HTV) oferuje trwałe i wyraziste
                                 nadruki na tekstyliach. Wykorzystując szeroką gamę kolorów i efektów (mat, błysk,
                                 brokat), personalizujemy odzież, akcesoria i inne materiały. Proces aplikacji przy
                                 użyciu wysokiej temperatury i nacisku gwarantuje długotrwałość i odporność na pranie,
@@ -157,20 +185,18 @@
                         </div>
                     </div>
                     <div class="services__box">
-                        <div class=" services__box-img services__box-img--shape3">
+                        <div class="services__box-img services__box-img--3">
                             <img src="./dist/img/services1.min.png"
                                 alt="Pracownik nanosi żółtą farbę na czarne koszulki, korzystając z techniki sitodruku.">
                         </div>
                         <div class="services__box-text">
-                            <p class="text__sm services__box-subtitle text__gradient-2">Od Prostej Grafiki po Złożone
-                                Wzory</p>
-                            <h3 class="text__lg services__box-title">Sublimacja</h3>
-                            <p class="text__md services__box-p">Oferujemy profesjonalną usługę sublimacji, idealną do
-                                przenoszenia pełnokolorowych, żywych grafik na różnorodne powierzchnie, takie jak
-                                tkaniny poliestrowe, ceramika czy metal. Dzięki zaawansowanemu procesowi chemicznemu
-                                barwniki wnikają głęboko w strukturę materiału, zapewniając wyjątkową trwałość,
-                                intensywność kolorów i niewyczuwalność nadruku. Ta metoda jest idealna dla produktów
-                                reklamowych, sportowych i pamiątkowych, gwarantując najwyższą jakość wykonania.</p>
+                            <p class="text__sm text__gradient-2">Wygoda i Oszczędność</p>
+                            <h3 class="text__lg">Sublimacja</h3>
+                            <p class="text__md">Oferujemy profesjonalną usługę sublimacji, idealną do
+                                przenoszenia pełnokolorowych grafik na tkaniny poliestrowe, ceramikę i metal. Dzięki
+                                zaawansowanemu procesowi chemicznemu barwniki wnikają głęboko w strukturę materiału,
+                                zapewniając trwałość, intensywność kolorów i niewyczuwalność nadruku. To idealna metoda
+                                dla produktów reklamowych, sportowych i pamiątkowych, gwarantując najwyższą jakość.</p>
                         </div>
                     </div>
                 </div>
@@ -178,56 +204,7 @@
         </div>
     </section>
 
-    <section class="realizations" id="realizations">
-        <div class="wrapper">
-            <div class="realizations__container">
-                <div class="text-box text-box__tac">
-                    <p class="text__md text__gradient-2">Realizacje</p>
-                    <h2 class="text__xl">Nasze wyróżnione <span class="doddle doddle__circle1">projekty</span></h2>
-                </div>
-                <div class="realizations__splide-container splide" role="group">
-                    <div class="splide__track">
-                        <div class="splide__list pswp-gallery" id="gallery">
-                            <a href="https://picsum.photos/200/500" target="_blank" data-pswp-width="1669"
-                                data-pswp-height="2500" class="splide__slide">
-                                <img src="https://picsum.photos/200/300" alt="">
-                            </a>
-                            <a href="https://picsum.photos/200/200" target="_blank" data-pswp-width="1669"
-                                data-pswp-height="2500" class="splide__slide">
-                                <img src="https://picsum.photos/500/300" alt="">
-                            </a>
-                            <a href="https://picsum.photos/200/300" target="_blank" data-pswp-width="1669"
-                                data-pswp-height="2500" class="splide__slide">
-                                <img src="https://picsum.photos/300/300" alt="">
-                            </a>
-                            <a href="https://picsum.photos/200/100" target="_blank" data-pswp-width="1669"
-                                data-pswp-height="2500" class="splide__slide">
-                                <img src="https://picsum.photos/150/300" alt="">
-                            </a>
-                            <a href="https://picsum.photos/200/600" target="_blank" data-pswp-width="1669"
-                                data-pswp-height="2500" class="splide__slide">
-                                <img src="https://picsum.photos/200/300" alt="">
-                            </a>
-                            <a href="https://picsum.photos/200/350" target="_blank" data-pswp-width="1669"
-                                data-pswp-height="2500" class="splide__slide">
-                                <img src="https://picsum.photos/500/300" alt="">
-                            </a>
-                            <a href="https://picsum.photos/200/150" target="_blank" data-pswp-width="1669"
-                                data-pswp-height="2500" class="splide__slide">
-                                <img src="https://picsum.photos/300/300" alt="">
-                            </a>
-                            <a href="https://picsum.photos/200/360" target="_blank" data-pswp-width="1669"
-                                data-pswp-height="2500" class="splide__slide">
-                                <img src="https://picsum.photos/150/300" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-us">
+    <section class="contact-us margin">
         <div class="wrapper">
             <div class="contact-us__container">
                 <div class="contact-us__box">
@@ -235,7 +212,7 @@
                     <h2 class="text__lg contact-us__title">Lorem ipsum dolor sit amet.</h2>
                     <div class="contact-us__box-grid">
                         <svg viewBox="9.608 34.254 82.121 26.656" xmlns="http://www.w3.org/2000/svg"
-                            class="contact-us__arrow">
+                            class="contact-us__arrow doddle">
                             <defs>
                                 <linearGradient id="gradient-1-0" gradientUnits="userSpaceOnUse" x1="50.668" y1="34.254"
                                     x2="50.668" y2="60.91" xlink:href="#gradient-1" />
@@ -303,41 +280,184 @@
         </div>
     </section>
 
-    <section class="example">
-        <div class="wrapper">
-            <div class="example__container">
-                <a href="#" class="a">Default link</a>
-                <a href="#" class="a a__custom-1">Custom link 1</a>
+    <section class="realizations margin" id="realizations">
+        <div class="realizations__container">
+            <div class="wrapper">
+                <div class="text-box text-box__tac">
+                    <p class="text__md text__gradient-2">Realizacje</p>
+                    <h2 class="text__xl">Nasze wyróżnione <span class="doddle doddle__circle1">projekty<svg
+                                viewBox="120.152 80.611 1959.648 638.766">
+                                <defs>
+                                    <linearGradient xlink:href="#a" id="b" x1="1099.976" x2="1099.976" y1="80.611"
+                                        y2="719.377" gradientUnits="userSpaceOnUse" />
+                                    <linearGradient bx:pinned="true" id="a">
+                                        <stop offset="0" stop-color="#8acef8" />
+                                        <stop offset=".5" stop-color="#a3dcff" />
+                                        <stop offset="1" stop-color="#aedefc" />
+                                    </linearGradient>
+                                </defs>
+                                <path
+                                    d="M1136 719c-183.3-3.2-366-25-546-59.7a1895 1895 0 01-186.9-44c-52.6-16-105.5-34.8-151.3-66-31.2-23.1-65.8-42.5-91.1-72.8-51.6-56-55.7-137.1-2.2-193.5 61.2-64 150.8-89.7 233.5-113.6 118.3-32.7 240.9-42.7 362-57.7 329.5-54.7 673-38.4 993 58.3-11.7-5.7-5.7-17.6 5.5-12a3350 3350 0 0130.3 24.2c13.2 4.2 26 9.4 39 14.4 95.4 38.6 253.7 112.3 258 230.2-1.9 111-194.4 170.1-282.6 199.2-81.6 24.4-165.4 39.6-248 60.5-135.7 27.7-274.9 34.7-413.2 32.5m-61.1-24c133.1 3.5 266.5-2.5 398.9-17.5 51.3-6.4 102.6-13.6 153.4-23.5a770 770 0 00170.4-70c-168.5 51-344.3 73-519.3 85.8-179.1 11-359.2 11.9-538-4 110.9 15.7 222.6 25.8 334.6 29.3zm-178.5-32.2c191.7 6 384 0 574.3-24.7 124.8-16.3 249.5-39.7 368.5-81.3 95.9-68 162.5-184.4 47-271l-48-40.8c-33.6-13-68.2-23.3-102.8-33.4-3.5 3.5-9.3 1-11.4-3-139-39.9-283.5-53.3-427.5-60.3-247.7-11-496.5 10.7-739.8 58A1909 1909 0 00388 248c-24.4 8-48.8 16.1-72.5 26-18 11.4-35 24.2-51.4 37.7-38 32.4-76.3 77.4-69.5 130.8 7 14.5 16.7 27.6 27.8 39.3 155.2 149 467.1 171.3 674 181m942.2-88.6a638 638 0 01-104.4 56c90.5-24.4 295.9-83.4 326.1-179.8 29-120.2-155.9-208-246.8-243.2 11.3 9 22 19.1 33.7 27.6 21.9 8 43 17.7 64.1 27.7 32.3 16 63.5 35.2 89.7 60.2 59.4 54.8 57.6 125.7-8.6 173.8-28.6 22-61.5 37.5-94.4 51.8-19.5 9.3-42 13.2-59.4 25.9M254 532.2a640 640 0 0054.3 27 365.2 365.2 0 01-93.3-65c10.8 14.5 23 29.3 39 38m1651.3-248c98.3 78 58.8 185-23.5 256.5 206.6-78.5 185.6-195.9-3.3-279.2zM195.5 491.6c-13.3-21.5-16.3-46.8-24-70.4-16-79.6 66.5-128.3 129-155 96.8-59.8 205.1-98.7 315.4-125.7-128.1 17.6-410 59.6-469.4 186.4-29.2 58.5 1.5 126.2 49 164.7m-8.8-107.1l-.7 3.6c11.5-29.3 32-53.8 55-74.8-24.5 17.2-48.1 41-54.3 71.2M397 229.4q-7.95 3.45-15.6 7.5c143-43 291-66.3 439.2-83.8a2987 2987 0 01519.8-14.3c-193.6-22.1-389.2-28-583.5-12.5-45 3.6-88.9 15.6-132.7 25.6A1235.4 1235.4 0 00397 229.4m1336.8-31.2c25.6 7 51.1 14.5 76.2 23.2l-34-28c-20-6.9-40-13.6-60.4-19.3a1814 1814 0 00-135.3-34.2 2254.7 2254.7 0 00-695.7-33.4c196.8-6.7 394 7.8 588.6 37.5 36.4 5.8 72.7 12.1 109 19 50.9 8.8 104.7 12.5 151.6 35.2"
+                                    fill="url(#b)" />
+                            </svg></span></h2>
+                </div>
+            </div>
+            <div class="realizations__splide-container splide" role="group">
+                <div class="splide__track">
+                    <div class="splide__list pswp-gallery" id="gallery">
+                        <a href="https://picsum.photos/200/500" target="_blank" data-pswp-width="1669"
+                            data-pswp-height="2500" class="splide__slide">
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </a>
+                        <a href="https://picsum.photos/200/200" target="_blank" data-pswp-width="1669"
+                            data-pswp-height="2500" class="splide__slide">
+                            <img src="https://picsum.photos/500/300" alt="">
+                        </a>
+                        <a href="https://picsum.photos/200/300" target="_blank" data-pswp-width="1669"
+                            data-pswp-height="2500" class="splide__slide">
+                            <img src="https://picsum.photos/300/300" alt="">
+                        </a>
+                        <a href="https://picsum.photos/200/100" target="_blank" data-pswp-width="1669"
+                            data-pswp-height="2500" class="splide__slide">
+                            <img src="https://picsum.photos/150/300" alt="">
+                        </a>
+                        <a href="https://picsum.photos/200/600" target="_blank" data-pswp-width="1669"
+                            data-pswp-height="2500" class="splide__slide">
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </a>
+                        <a href="https://picsum.photos/200/350" target="_blank" data-pswp-width="1669"
+                            data-pswp-height="2500" class="splide__slide">
+                            <img src="https://picsum.photos/500/300" alt="">
+                        </a>
+                        <a href="https://picsum.photos/200/150" target="_blank" data-pswp-width="1669"
+                            data-pswp-height="2500" class="splide__slide">
+                            <img src="https://picsum.photos/300/300" alt="">
+                        </a>
+                        <a href="https://picsum.photos/200/360" target="_blank" data-pswp-width="1669"
+                            data-pswp-height="2500" class="splide__slide">
+                            <img src="https://picsum.photos/150/300" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="example">
+    <section class="partnership margin">
         <div class="wrapper">
-            <div class="example__container">
-                <button class="btn">
-                    <div class="btn__transparent"></div>
-                    <span class="btn__text">Transparent</span>
-                </button>
-                <button class="btn">
-                    <div class="btn__solid"></div>
-                    <span class="btn__text">Solid</span>
-                </button>
-                <button class="btn">
-                    <div class="btn__solid-gradient"></div>
-                    <span class="btn__text">Solid Gradient</span>
-                </button>
-                <button class="btn">
-                    <div class="btn__border"></div>
-                    <span class="btn__text">Border</span>
-                </button>
-                <button class="btn">
-                    <div class="btn__border-gradient"></div>
-                    <span class="btn__text">Border Gradient</span>
-                </button>
+            <div class="partnership__container">
+                <div class="partnership__text-box">
+                    <p class="text__md text__gradient-1">Skontakuj się z nami</p>
+                    <h2 class="text__lg partnership__title">Lorem ipsum dolor sit amet.</h2>
+                </div>
+                <div class="partnership__box-container">
+                    <div class="partnership__box partnership__box--img">
+                        <img src="./dist/img/partnership.min.svg"
+                            alt="Ilustracja przedstawiająca dwie osoby uściskujące dłonie w biurze. W tle widoczne są ikony symbolizujące pomysły i wzrost, takie jak żarówka i wykres.">
+                    </div>
+                    <div class="partnership__box partnership__box--text">
+                        <h2 class="partnership__subtitle text__lg">Let's
+                            <span class="doddle doddle__underline2">talk
+                                <svg viewBox="0 -0.005 1417.245 124.208">
+                                    <defs>
+                                        <linearGradient xlink:href="#a" id="b" x1="708.622" x2="708.622" y1="-.005"
+                                            y2="124.203" gradientUnits="userSpaceOnUse"></linearGradient>
+                                        <linearGradient bx:pinned="true" id="a">
+                                            <stop offset="0" stop-color="#8acef8"></stop>
+                                            <stop offset=".12" stop-color="#a3dcff"></stop>
+                                            <stop offset="1" stop-color="#0d466d"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <path
+                                        d="M1412.29 72.17c-11.04-5.78-20.07-14.33-85.46-25.24-22.37-3.63-44.69-7.56-67.07-11.04-167.11-22.06-181.65-21.24-304.94-30.56C888.78 1.39 822.57 1.1 756.44 0c-46.63-.11-93.27 1.56-139.89 2.5C365.5 13.55 452.86 7.68 277.94 23.15 202.57 33.32 127.38 45.01 52.07 55.69c-11.23 2.41-22.63 4.17-33.71 7.22C6.1 66.33 5.64 66.19 3.89 67.79c-7.99 5.78-2.98 20.14 8.72 17.5 33.99-9.47 32.28-8.57 178.06-29.66 4.26 4.48 7.29 3.38 18.42 3.11 13.19-.32 26.38-.53 39.56-1.12 53.51-3.81 106.88-9.62 160.36-13.95 18.41-1.3 36.8-3.12 55.21-4.7 23.21-1.16 46.43-2.29 69.65-3.4 120.28-2.16 85.46-3.13 234.65-1.52 23.42.99 1.57-.18 125.72 6.9 96.61 8.88 200.92 27.94 295.42 46.12 40.87 7.91 116.67 23.2 156.31 36.78 3.81 1.05 8.28-.27 10.51-3.58 3.17-3.72 2.66-9.7-.78-13.13-3.25-3.12-8.14-3.44-12.18-5.08-17.89-5.85-44.19-12.09-63.67-16.56l26.16 3.28c23.02 3.13 46.28 3.92 69.34 6.75 10.8.96 25.43 1.81 34.34-4.39 2.26-1.54 4.86-2.75 6.21-5.27 2.76-4.59 1.13-11.06-3.59-13.68zM925.4 23.77c37.64 1.4 153.99 10.85 196.64 14.94 45.95 5.51 91.89 11.03 137.76 17.19 24.25 4.77 74.13 11.21 101.72 18.14-11.87-1.15-23.77-1.97-35.65-3.06-133.46-15.9-266.8-33.02-400.47-47.21"
+                                        fill="url(#b)"></path>
+                                </svg>
+                            </span>
+                        </h2>
+                        <p class="partnership__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reprehenderit, maxime consequuntur eius nisi iusto cum ut officiis eaque atque laudantium.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, deleniti facilis voluptatum
+                            id excepturi ex temporibus. Iure est eligendi fugit incidunt quod nostrum, fuga
+                            reprehenderit cum odit ipsa maiores rerum similique dolore! Provident deleniti distinctio
+                            quae sequi itaque cum ab beatae? Error id at nemo sapiente doloremque aperiam facilis quia.
+                        </p>
+                        <button class="btn partnership__btn">
+                            <div class="btn__solid-gradient"></div>
+                            <span class="btn__text">Let's talk</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="faq margin margin__last">
+        <div class="wrapper">
+            <div class="faq__container">
+                <div class="text-box text-box__tac">
+                    <p class="text__md text__gradient-2">FAQ</p>
+                    <h2 class="text__xl">Odpowiedzi na <span class="doddle doddle__underline3">częste<svg
+                                viewBox="20.407 232.279 757.286 44.0183" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="SvgjsLinearGradient1000">
+                                        <stop stop-color="#8acef8" offset="0" />
+                                        <stop stop-color="#aedefc" offset="1" />
+                                    </linearGradient>
+                                </defs>
+                                <path
+                                    d="M 20.407 232.279 C 24.835 236.85 32.954 258.75 46.978 259.706 C 61.002 260.663 89.345 237.275 104.55 238.019 C 119.754 238.763 121.969 264.171 138.207 264.171 C 154.445 264.171 185.74 237.381 201.978 238.019 C 218.216 238.657 219.25 267.68 235.635 267.999 C 252.021 268.317 283.759 239.72 300.293 239.933 C 316.826 240.145 319.483 268.636 334.836 269.274 C 350.188 269.912 380.302 243.866 392.407 243.76 C 404.512 243.654 394.621 268.849 407.464 268.636 C 420.307 268.424 454.407 241.209 469.464 242.484 C 484.521 243.76 480.536 276.822 497.807 276.291 C 515.078 275.759 555.231 239.72 573.093 239.295 C 590.955 238.87 588.445 272.995 604.978 273.739 C 621.512 274.483 659.598 243.654 672.293 243.76 C 684.988 243.866 665.798 275.334 681.15 274.377 C 696.502 273.42 748.317 237.913 764.407 238.019 C 780.498 238.126 775.479 268.849 777.693 275.015"
+                                    fill="none" stroke-width="25" stroke="url(&quot;#SvgjsLinearGradient1000&quot;)"
+                                    stroke-linecap="round" style="transform-origin: 399.05px 254.288px;"
+                                    transform="matrix(-1, 0, 0, -1, 0, -0.000030517578)" />
+                            </svg></span> pytania</h2>
+                </div>
+                <div class="faq__box">
+                    <div class="faq__box-svg">
+                        <img src="./dist/img/faq.min.svg"
+                            alt="Ilustracja FAQ z lupą, znakami zapytania i wykrzyknikami">
+                    </div>
+                    <div class="faq__box-accordion">
+                        <div class="accordion__container">
+                            <div class="accordion__box">
+                                <div class="accordion__box-top">
+                                    <p class="accordion__title">Lorem ipsum dolor sit amet?</p>
+                                    <i class="ti ti-chevron-down accordion__arrow"></i>
+                                </div>
+                                <div class="accordion__box-bottom">
+                                    <p class="accordion__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Obcaecati corporis magni nesciunt deserunt tempore architecto est, placeat natus
+                                        quibusdam doloribus.</p>
+                                </div>
+                            </div>
+                            <div class="accordion__box">
+                                <div class="accordion__box-top">
+                                    <p class="accordion__title">Lorem ipsum dolor sit amet?</p>
+                                    <i class="ti ti-chevron-down accordion__arrow"></i>
+                                </div>
+                                <div class="accordion__box-bottom">
+                                    <p class="accordion__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Obcaecati corporis magni nesciunt deserunt tempore architecto est, placeat natus
+                                        quibusdam doloribus.</p>
+                                </div>
+                            </div>
+                            <div class="accordion__box">
+                                <div class="accordion__box-top">
+                                    <p class="accordion__title">Lorem ipsum dolor sit amet?</p>
+                                    <i class="ti ti-chevron-down accordion__arrow"></i>
+                                </div>
+                                <div class="accordion__box-bottom">
+                                    <p class="accordion__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Obcaecati corporis magni nesciunt deserunt tempore architecto est, placeat natus
+                                        quibusdam doloribus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
     <div class="footer__waves"></div>
     <div class="footer__container">
@@ -348,6 +468,7 @@
 <script src="./dist/js/bgIcons.min.js"></script>
 <script src="./dist/js/headerVideoBackground.min.js"></script>
 <script src="./dist/js/safariTest.min.js"></script>
+<script src="./dist/js/accordion.min.js"></script>
 
 <!-- Splide JS -->
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
