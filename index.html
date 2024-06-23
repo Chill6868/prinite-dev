@@ -15,7 +15,8 @@
 <!-- Splide CSS -->
 <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 <!-- Photoswipe CSS -->
-<link rel="stylesheet" href="./dist/css/photoswipe.css">
+<!-- <link rel="stylesheet" href="./dist/css/photoswipe.css"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.css">
 <!-- Hamburgers CSS -->
 <link rel="stylesheet" href="./dist/css/hamburgers.css">
 <!-- Main CSS -->
@@ -42,19 +43,19 @@
             </div>
         </div>
         <div class="nav__container">
-            <a href="index.html" class="nav-m__logo a">
+            <a href="./" class="nav__logo a">
                 <img src="./dist/img/logo.min.svg" alt="prinite logo">
             </a>
             <div class="nav__link-container">
-                <a href="#" class="nav__link">Usługi</a>
-                <a href="#" class="nav__link">Realizacje</a>
-                <a href="#" class="nav__link">FAQ</a>
+                <a href="./#services" class="nav__link">Usługi</a>
+                <a href="./#realizations" class="nav__link">Realizacje</a>
+                <a href="./#faq" class="nav__link">FAQ</a>
             </div>
-            <button class="btn btn--hover">
+            <a class="btn btn--hover" href="contact.html">
                 <div class="btn__bg-solid"></div>
                 <div class="btn__border-solid"></div>
                 <span class="btn__text">Skontaktuj się z nami!</span>
-            </button>
+            </a>
         </div>
     </div>
 </nav>
@@ -85,10 +86,10 @@
 </nav>
 <div class="nav-m-menu">
     <div class="nav-m-menu__container">
-        <a href="#" class="nav-m-menu__item">Kontakt</a>
-        <a href="#" class="nav-m-menu__item">Usługi</a>
-        <a href="#" class="nav-m-menu__item">Realizacje</a>
-        <a href="#" class="nav-m-menu__item">FAQ</a>
+        <a href="./contact.html" class="nav-m-menu__item">Kontakt</a>
+        <a href="./#services" class="nav-m-menu__item">Usługi</a>
+        <a href="./#realizations" class="nav-m-menu__item">Realizacje</a>
+        <a href="./#faq" class="nav-m-menu__item">FAQ</a>
     </div>
 </div>
     <section class="bg">
@@ -157,8 +158,6 @@
                 <div class="services__box-container">
                     <div class="services__box">
                         <div class="services__box-img services__box-img--1">
-                            <img src="./dist/img/services1.min.png"
-                                alt="Pracownik nanosi żółtą farbę na czarne koszulki, korzystając z techniki sitodruku.">
                         </div>
                         <div class="services__box-text">
                             <p class="text__sm text__gradient-3">Trwałość i Jakość</p>
@@ -172,8 +171,6 @@
                     </div>
                     <div class="services__box">
                         <div class="services__box-img services__box-img--2">
-                            <img src="./dist/img/services1.min.png"
-                                alt="Pracownik nanosi żółtą farbę na czarne koszulki, korzystając z techniki sitodruku.">
                         </div>
                         <div class="services__box-text services__box-text--secondary">
                             <p class="text__sm text__gradient-3">Profesjonalne Nadruki</p>
@@ -187,12 +184,10 @@
                     </div>
                     <div class="services__box">
                         <div class="services__box-img services__box-img--3">
-                            <img src="./dist/img/services1.min.png"
-                                alt="Pracownik nanosi żółtą farbę na czarne koszulki, korzystając z techniki sitodruku.">
                         </div>
                         <div class="services__box-text">
                             <p class="text__sm text__gradient-3">Wygoda i Oszczędność</p>
-                            <h3 class="text__lg">Sublimacja</h3>
+                            <h3 class="text__lg">DTF (Direct To Film)</h3>
                             <p class="text__md">Oferujemy profesjonalną usługę sublimacji, idealną do
                                 przenoszenia pełnokolorowych grafik na tkaniny poliestrowe, ceramikę i metal. Dzięki
                                 zaawansowanemu procesowi chemicznemu barwniki wnikają głęboko w strukturę materiału,
@@ -267,11 +262,11 @@
                             </div>
                         </div>
                         <div class="contact-us__btn-box">
-                            <button class="btn btn--hover">
+                            <a class="btn btn--hover" href="contact.html">
                                 <div class="btn__border-solid"></div>
                                 <div class="btn__bg-solid btn__bg-solid--on-hover"></div>
                                 <span class="btn__text">Skontaktuj się z nami!</span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -383,18 +378,18 @@
                             reprehenderit cum odit ipsa maiores rerum similique dolore! Provident deleniti distinctio
                             quae sequi itaque cum ab beatae? Error id at nemo sapiente doloremque aperiam facilis quia.
                         </p>
-                        <button class="partnership__btn btn btn--hover">
+                        <a class="partnership__btn btn btn--hover" href="contact.html">
                             <div class="btn__bg-solid"></div>
                             <div class="btn__border-solid"></div>
                             <span class="btn__text">Let's talk</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="faq margin margin__last">
+    <section class="faq margin margin__last" id="faq">
         <div class="wrapper">
             <div class="faq__container">
                 <div class="text-box text-box__tac">
@@ -509,10 +504,10 @@
                             target="_blank" class="a">
                             <p><i class="ti ti-building-skyscraper"></i> Wieluń, 98-300</p>
                         </a>
-                        <a href="mailto:example@gmail.com" target="_blank" class="a">
+                        <a href="mailto:example@gmail.com" class="a">
                             <p><i class="ti ti-mail"></i> example@gmail.com</p>
                         </a>
-                        <a href="tel:+48123456789" target="_blank" class="a">
+                        <a href="tel:+48123456789" class="a">
                             <p><i class="ti ti-phone"></i> +48 123 456 789</p>
                         </a>
                     </div>
@@ -542,8 +537,21 @@
 <script src="./dist/js/splideConfig.min.js"></script>
 
 <!-- PhotoSwipe JS -->
-<script src="./src/js/photoswipe.esm.js"></script>
-<script src="./src/js/photoswipe-lightbox.esm.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.js"></script>
+
+<script type="module">
+    import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.js';
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#gallery',
+        children: '.splide__slide',
+        pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.js'),
+        counter: false
+    });
+    lightbox.init();
+</script>
+<!-- <script src="./dist/js/photoswipe.esm.js"></script>
+<script src="./dist/js/photoswipe-lightbox.esm.js"></script>
 
 <script type="module">
     import PhotoSwipeLightbox from './dist/js/photoswipe-lightbox.esm.js';
@@ -554,7 +562,7 @@
         counter: false
     });
     lightbox.init();
-</script>
+</script> -->
 </body>
 
 </html>

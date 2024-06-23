@@ -26,6 +26,8 @@ const paths = {
 	jsDest: "./dist/js",
 	img: "./src/img/*",
 	imgDest: "./dist/img",
+	videos: "./src/videos/*",
+	videosDest: "./dist/videos",
 };
 
 function sassCompiler(done) {
@@ -67,6 +69,13 @@ function minifyImages(done) {
 	done();
 }
 
+function minifyVideos(done) {
+	src(paths.videos)
+		.pipe(rename({ suffix: ".min" }))
+		.pipe(dest(paths.videosDest));
+	done();
+}
+
 function handleKits(done) {
 	src(paths.html).pipe(kit()).pipe(dest("./"));
 	done();
@@ -82,7 +91,6 @@ function startBrowserSync(done) {
 		server: {
 			baseDir: "./",
 		},
-		notify: false,
 	});
 	done();
 }
@@ -101,7 +109,8 @@ const mainFunctions = parallel(
 	handleKits,
 	sassCompiler,
 	javascript,
-	minifyImages
+	minifyImages,
+	minifyVideos
 );
 
 exports.cleanFiles = cleanFiles;
