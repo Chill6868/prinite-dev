@@ -172,6 +172,21 @@
                                     class="ti ti-phone"></i></div>
                         </div>
                         <div class="contact__item-box">
+                            <span class="contact__item-box-text">Kategoria</span>
+                            <div class="contact__item-box-icon-box contact__icon-box-icon-box-category"><i
+                                    class="ti ti-shirt"></i></div>
+                        </div>
+                        <div class="contact__item-box">
+                            <span class="contact__item-box-text">Lokalizacja nadruku</span>
+                            <div class="contact__item-box-icon-box contact__icon-box-icon-box-print-location"><i
+                                    class="ti ti-paint"></i></div>
+                        </div>
+                        <div class="contact__item-box">
+                            <span class="contact__item-box-text">Własna grafika</span>
+                            <div class="contact__item-box-icon-box contact__icon-box-icon-box-is-artwork"><i
+                                    class="ti ti-photo"></i></div>
+                        </div>
+                        <div class="contact__item-box">
                             <span class="contact__item-box-text">Opis</span>
                             <div class="contact__item-box-icon-box contact__icon-box-icon-box-description">
                                 <i class="ti ti-message"></i>
@@ -214,25 +229,33 @@
                             <label class="input__label" for="print-location">Lokalizacja nadruku</label>
                             <select id="print-location">
                                 <option value="none" disabled selected>Wybierz lokalizacje</option>
-                                <option value=""></option>
+                                <option value="">Gaweł</option>
+                                <option value="">Paweł</option>
                             </select>
                             <div class="input__description"><span class="input__description-icon"><i
                                         class="ti ti-exclamation-circle"></i></span> Proszę wybrać opcję z listy.</div>
                         </div>
                         <div class="input__box">
-                            <label class="input__label" for="have-artwork">Lokalizacja nadruku</label>
-                            <select id="have-artwork">
+                            <label class="input__label" for="is-artwork">Własna grafika</label>
+                            <select id="is-artwork">
                                 <option value="none" disabled selected>Czy posiadasz własną grafikę?</option>
-                                <option value="no">Nie posiadam własnej grafiki</option>
-                                <option value="yes">Posiadam własną grafikę</option>
+                                <option value="without-artwork">Nie posiadam własnej grafiki</option>
+                                <option value="with-artwork">Posiadam własną grafikę</option>
                             </select>
                             <div class="input__description"><span class="input__description-icon"><i
                                         class="ti ti-exclamation-circle"></i></span> Proszę wybrać opcję z listy.</div>
                         </div>
-                        <div class="input__box">
+                        <div class="input__box input__box-file-select">
                             <div class="input__file-select">
                                 <input type="file" id="artwork" accept="image/*">
-                                <label class="input__file-select-label" for="artwork">Prześlij grafikę</label>
+                                <label class="input__file-select-label" for="artwork">
+                                    <img src="./dist/img/file-upload.min.svg" alt="File upload icon">
+                                    <div class="input__file-select-text-box">
+                                        <p class="input__file-select-title">Przeciągnij i upuść grafikę tutaj</p>
+                                        <p class="input__file-select-subtitle">lub <span>przeglądaj</span> na swoim
+                                            urządzeniu</p>
+                                    </div>
+                                </label>
                             </div>
                             <div class="input__description"><span class="input__description-icon"><i
                                         class="ti ti-exclamation-circle"></i></span> Proszę wybrać plik graficzny.</div>
