@@ -215,8 +215,8 @@
                             <label class="input__label" for="tel">Numer telefonu (opcjonalnie)</label>
                             <input type="tel" id="tel">
                             <div class="input__description"><span class="input__description-icon"><i
-                                        class="ti ti-exclamation-circle"></i></span> Podaj
-                                poprawny numer telefonu.</div>
+                                        class="ti ti-exclamation-circle"></i></span> Podaj poprawny numer telefonu lub
+                                pozostaw to pole puste.</div>
                         </div>
                         <div class="input__box">
                             <label class="input__label" for="category">Kategoria (np. t-shirt, hoodie, long
@@ -227,13 +227,9 @@
                         </div>
                         <div class="input__box">
                             <label class="input__label" for="print-location">Lokalizacja nadruku</label>
-                            <select id="print-location">
-                                <option value="none" disabled selected>Wybierz lokalizacje</option>
-                                <option value="">Gaweł</option>
-                                <option value="">Paweł</option>
-                            </select>
+                            <input type="text" id="print-location">
                             <div class="input__description"><span class="input__description-icon"><i
-                                        class="ti ti-exclamation-circle"></i></span> Proszę wybrać opcję z listy.</div>
+                                        class="ti ti-exclamation-circle"></i></span> Pole nie może być puste.</div>
                         </div>
                         <div class="input__box">
                             <label class="input__label" for="is-artwork">Własna grafika</label>
@@ -268,11 +264,19 @@
                                         class="ti ti-exclamation-circle"></i></span> Opis nie może
                                 być pusty.</div>
                         </div>
-                        <button class="btn btn--hover btn-send contact__btn">
-                            <div class="btn__bg-solid"></div>
-                            <div class="btn__border-solid"></div>
-                            <span class="btn__text">Skontaktuj się z nami!</span>
-                        </button>
+                        <div class="contact__btn-box">
+                            <button class="btn btn--hover btn-send contact__btn">
+                                <div class="btn__bg-solid"></div>
+                                <div class="btn__border-solid"></div>
+                                <span class="btn__text">Prześlij</span>
+                            </button>
+                            <p class="input__description"><i class="ti ti-exclamation-circle"></i> Wysyłając formularz
+                                akceptujesz naszą
+                                <a class="a contact__privacy-policy-link" href="./privacy-policy.html" target="_blank"
+                                    rel="noopener">politykę
+                                    prywatności</a>.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -311,8 +315,16 @@
                         <a href="./#contact" class="a">
                             <p>Kontakt</p>
                         </a>
+                    </div>
+                </div>
+                <div class="footer__container-box">
+                    <h4 class="footer__container-title">Podstrony</h4>
+                    <div class="footer__item-box">
                         <a href="./pricing.html" class="a">
                             <p>Formularz wyceny</p>
+                        </a>
+                        <a href="./privacy-policy.html" class="a">
+                            <p>Polityka prywatności</p>
                         </a>
                     </div>
                 </div>
@@ -341,8 +353,8 @@
     <div class="footer__bottom-container">
         <div class="wrapper">
             <span class="footer__bottom-box">Copyright &copy; 2024 Printie. Wszelkie prawa zastrzeżone.</span>
-            <span class="footer__bottom-box footer__bottom-box--author"><a href="mailto:wiktor.ignasiak2@gmail.com"
-                    class="a">Stworzone przez Wiktor
+            <span class="footer__bottom-box footer__bottom-box--author"><a href="https://wiktorignasiak.com/"
+                    target="_blank" rel="noopener" class="a">Stworzone przez Wiktor
                     Ignasiak</a></span>
         </div>
     </div>
